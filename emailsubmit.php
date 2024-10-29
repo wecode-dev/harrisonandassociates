@@ -60,7 +60,7 @@ if(isset($_POST['submit']))
 }
 else
 {
-    header('Location: emailindex.php');
+    header('Location: emailindex.html');
     exit(0);
 }
 
