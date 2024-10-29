@@ -1,5 +1,4 @@
-<script>
-	<?php
+<?php
 session_start();
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
@@ -13,6 +12,10 @@ if(isset($_POST['submit']))
 {
     $name= $_POST['name'];
     $email=$_POST['email'];
+    $mobile=$_POST['mobile'];
+    $subject=$_POST['subject'];
+    $message=$_POST['message'];
+
     
     
     //Create an instance; passing `true` enables exceptions
@@ -37,10 +40,13 @@ if(isset($_POST['submit']))
         //Content
         $mail->isHTML(true);                                  //Set email format to HTML
         $mail->Subject = 'New Enquiry - WeCode Contact Form';
-        $mail->Body    = '<h3>Hello, you got a new enquiry from Customer with contact details and Approach -<b>WeCode</b>-
-	<br><b>Customer Contact Details</b><br>
+        $mail->Body    = '<h3>Hello, you got a new enquiry -<b>WeCode</b>-
+	<br><b>Customer Details</b><br>
         <h4>Name: '.$name.'</h4>
         <h4>Email:'.$email.'</h4>
+	<h4>Mobile:'.$mobile.'</h4>
+	<h4>Subject:'.$subject.'</h4>
+	<h4>Message:'.$message.'</h4>
     ';
         
         if($mail->send())
@@ -66,4 +72,3 @@ else
 }
 
 ?>
-</script>
