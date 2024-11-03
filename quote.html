@@ -111,36 +111,41 @@
 									<img src="assets/img/quote.jpg" alt="" data-aos="fade-in"
 										class="" width="100%" height="100%">
 								</div>
-
 								<div class="col-sm-9 p-3">
-									<form action="emailsubmit.php" method="post" data-aos="fade-up" data-aos-delay="200">
+									<form action="quotesubmit.php" method="post" data-aos="fade-up" data-aos-delay="200">
 										<div class="row gy-4">
 											<div class="col-md-6">
-												<input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-												<!--input type="text" placeholder="Name" name="name"-->
-											</div>
+												<input type="text" name="q_name" class="form-control" placeholder="Your Name" required="">
+												</div>
 											<div class="col-md-6">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-
-												<!--input type="email" placeholder="Email" name="email"-->
-											</div>
+                  <input type="email" class="form-control" name="q_email" placeholder="Your Email" required="">
+</div>
 											<div class="col-md-6">
-											<input type="tel" class="form-control" name="mobile" placeholder="Your Mobile" required="">
-
-												<!--<input type="tel" placeholder="mobile" name="mobile"
-													pattern="[0-9]{10}" required><br>-->
+											<input type="tel" class="form-control" name="q_mobile" placeholder="Your Mobile" required="">
 											</div>
-											<div class="col-md-12">
-												<input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                <!--<input type="text" placeholder="subject" name="subject"><br>-->
+								
+<div class="col-md-6">
+										<input type="text" class="form-control" name="q_location" placeholder="location" required="">
 											</div>
-											<div class="col-md-12">
-<textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-												<!--<textarea name="message" rows="6" placeholder="Message"
-													required=""></textarea>-->
-											</div>
+			
+<div class="col-md-12">
+  <span class="form-control">Service Required:
+  <select class="form-control" id="q_servicerequired" name="q_servicerequired">
+    <option>None</option>
+<option>Court Orders</option>
+<option>Summons and Subpoenas</option>
+<option>Divorce Papers</option>
+<option>Injunctions</option>
+<option>Writs</option>
+<option>Statutory Demands</option>
+     </select></span>
+</div> 		
+						
+<div class="col-md-12">		
+<textarea class="form-control" name="q_addinfo" placeholder="Additional Information" rows="6" required=""></textarea>
+</div>
 											<div class="col-md-6">
-												<input type="submit" placeholder="submit" name="submit">
+												<button type="submit" placeholder="submit" name="q_submit" class="btn btn-primary">Submit</button>
 											</div>
 										</div>
 									</form>
