@@ -416,38 +416,37 @@ Whether you have questions about our services, need an urgent process serving, o
           <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
                 <h3>Alternatively, use the contact form below, and one of our team members will respond to you as quickly as possible.</h3>
                 </div>
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-              <div class="row gy-4">
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-                </div>
-
-                <div class="col-md-6 ">
+							<form action="emailsubmit.php" method="post" data-aos="fade-up" data-aos-delay="200">
+										<div class="row gy-4">
+											<div class="col-md-6">
+												<input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+												<!--input type="text" placeholder="Name" name="name"-->
+											</div>
+											<div class="col-md-6">
                   <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-                </div>
 
-                <div class="col-md-6 ">
-                  <input type="tel" class="form-control" name="mobile" placeholder="Your Mobile number" required="">
-                </div>
-                
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                </div>
+												<!--input type="email" placeholder="Email" name="email"-->
+											</div>
+											<div class="col-md-6">
+											<input type="tel" class="form-control" name="mobile" placeholder="Your Mobile" required="">
 
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit">Send Message</button>
-                </div>
-
-              </div>
-            </form>
+												<!--<input type="tel" placeholder="mobile" name="mobile"
+													pattern="[0-9]{10}" required><br>-->
+											</div>
+											<div class="col-md-12">
+												<input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                <!--<input type="text" placeholder="subject" name="subject"><br>-->
+											</div>
+											<div class="col-md-12">
+<textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+												<!--<textarea name="message" rows="6" placeholder="Message"
+													required=""></textarea>-->
+											</div>
+											<div class="col-md-6">
+												<input type="submit" placeholder="submit" name="submit">
+											</div>
+										</div>
+									</form>
           </div><!-- End Contact Form -->
         </div>
 
