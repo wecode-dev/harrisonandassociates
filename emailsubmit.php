@@ -39,14 +39,16 @@ if(isset($_POST['submit']))
         
         //Content
         $mail->isHTML(true);                                  //Set email format to HTML
-        $mail->Subject = 'New Enquiry - WeCode Contact Form';
-        $mail->Body    = '<h3>Hello, you got a new enquiry -<b>WeCode</b>-
-	<br><b>Customer Details</b><br>
-        <h4>Name: '.$name.'</h4>
-        <h4>Email:'.$email.'</h4>
-	<h4>Mobile:'.$mobile.'</h4>
-	<h4>Subject:'.$subject.'</h4>
-	<h4>Message:'.$message.'</h4>
+        $mail->Subject = 'New Customer Enquiry - Harrison&Associates Ltd Contact Form';
+        $mail->Body    = '<h3> ----- <b>Harrison&Associates Ltd</b> ----- <br>Hello Team, we got a new enquiry
+	<br><h3>Customer Details</h3>
+	<h4>-------------------------------</h4>
+        <h4><b>Name : </b>'.$name.'</h4>
+        <h4><b>Email : </b>'.$email.'</h4>
+	<h4><b>Mobile : </b>'.$mobile.'</h4>
+	<h4><b>Subject : </b>'.$subject.'</h4>
+	<h4><b>Message : </b>'.$message.'</h4>
+<h4>-------------------------------</h4>
     ';
         
         if($mail->send())
@@ -67,7 +69,7 @@ if(isset($_POST['submit']))
 }
 else
 {
-    header('Location: emailindex.html');
+    header('Location: index.html');
     exit(0);
 }
 
