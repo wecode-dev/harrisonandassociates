@@ -35,9 +35,10 @@
 <link href="assets/css/main.css" rel="stylesheet">
 
 <!-- =======================================================
-  * Template Name: The Harrison & Associates Ltd.
+  * Template Name: The Harrison & Associates Ltd
   * Updated: Sep 24 2024
-  * Author: Aravind Marshall & Sam
+  * Author: Aravind Marshall
+  *Company Name : WeCode
   ======================================================== -->
 </head>
 
@@ -56,31 +57,22 @@
 
 			<nav id="navmenu" class="navmenu">
 				<ul>
-					<li><a href="index.html#home">Home<br></a></li>
-					<li><a href="index.html#about">About</a></li>
-					<li class="dropdown"><a href="index.html#services"><span>Services</span>
-							<i class="bi bi-chevron-down toggle-dropdown"></i></a>
+					<li><a href="index.html#home" class="active">Home<br></a></li>
+					<li><a href="index.html#about">About Us</a></li>
+					<li><a href="quote.html">Get a Quote</a></li>
+					<li class="dropdown"><a href="index.html#services"><span>Services</span> <i
+							class="bi bi-chevron-down toggle-dropdown"></i></a>
 						<ul>
 							<li><a href="service-details.html">Process Serving</a></li>
 						</ul></li>
 				</ul>
 				<i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
 			</nav>
-			<a class="btn-getstarted" href="index.html#contact">Contact</a>
+			<a class="btn-getstarted" href="contact.html">Contact Us</a>
 		</div>
 	</header>
 
 	<main class="quote">
-
-		<!-- Page Title -->
-		<div class="page-title accent-background">
-			<div class="container">
-				<h1>The Harrison & Associates Ltd - Quote</h1>
-
-			</div>
-		</div>
-		<!-- End Page Title -->
-
 
 		<!-- Service Details Section -->
 		<section id="Quote" class="Quote section">
@@ -88,65 +80,71 @@
 				data-aos-delay="100">
 				<div class="col-xl-10">
 					<div class="text-center">
-						<h3>Request a Free Quote Today</h3>
-					</div>
-				</div>
-				<div class="container section-title">
-					<p>Looking for fast, reliable process serving or legal document
+						<h1>Request a Free Quote Today</h1>
+					</div><br>
+<div class="content">
+<p>Looking for fast, reliable process serving or legal document
 						handling? Fill out the form below, and a member of our team will
 						provide you with a tailored quote based on your specific needs. We
 						offer competitive rates for all services, and we are happy to
-						provide upfront pricing with no hidden fees.</p>
-
-					<div class="info-item d-flex" data-aos="fade-up"
-						data-aos-delay="300">
-						<h3>Alternatively, use the contact form below, and one of our
-							team members will respond to you as quickly as possible.</h3>
-					</div>
-
+						provide upfront pricing with no hidden fees.</p></div>
+				</div>
+				<div class="container section-title">
+				
 					<div class="container">
 						<div class="content">
 							<div class="row">
-								<div class="col-sm-3 p-3">
+								<div class="col-sm-4 p-3">
 									<img src="assets/img/quote.jpg" alt="" data-aos="fade-in"
 										class="" width="100%" height="100%">
 								</div>
-								<div class="col-sm-9 p-3">
-									<form action="quotesubmit.php" method="post" data-aos="fade-up" data-aos-delay="200">
+								<div class="col-sm-8 p-3">
+									<form action="quotesubmit.php" method="post" data-aos="fade-up"
+										data-aos-delay="200">
 										<div class="row gy-4">
-											<div class="col-md-6">
-												<input type="text" name="q_name" class="form-control" placeholder="Your Name" required="">
-												</div>
-											<div class="col-md-6">
-                  <input type="email" class="form-control" name="q_email" placeholder="Your Email" required="">
-</div>
-											<div class="col-md-6">
-											<input type="tel" class="form-control" name="q_mobile" placeholder="Your Mobile" required="">
+											<div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+												<input type="text" name="q_name" class="form-control"
+													placeholder="Your Name" required="">
 											</div>
-								
-<div class="col-md-6">
-										<input type="text" class="form-control" name="q_location" placeholder="location" required="">
+											<div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+												<input type="email" class="form-control" name="q_email"
+													placeholder="Your Email" required="">
 											</div>
-			
-<div class="col-md-12">
-  <span class="form-control">Service Required:
-  <select class="form-control" id="q_servicerequired" name="q_servicerequired">
-    <option>None</option>
-<option>Court Orders</option>
-<option>Summons and Subpoenas</option>
-<option>Divorce Papers</option>
-<option>Injunctions</option>
-<option>Writs</option>
-<option>Statutory Demands</option>
-     </select></span>
-</div> 		
-						
-<div class="col-md-12">		
-<textarea class="form-control" name="q_addinfo" placeholder="Additional Information" rows="6" required=""></textarea>
-</div>
-											<div class="col-md-6">
-												<button type="submit" placeholder="submit" name="q_submit" class="btn btn-primary">Submit</button>
+											<div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+												<input type="tel" class="form-control" name="q_mobile"
+													placeholder="Your Mobile" required="">
 											</div>
+
+											<div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+												<input type="text" class="form-control" name="q_location"
+													placeholder="location" required="">
+											</div>
+
+											<div class="col-md-6" data-aos="fade-up"
+												data-aos-delay="300">
+												<p>Service Required: </p>
+											</div>
+											<div class="col-md-6" data-aos="fade-up"
+												data-aos-delay="300">
+												<select	class="form-control" id="q_servicerequired" name="q_servicerequired">
+														<option selected>Select Service Required</option>
+ 														 <option value="1">Process Serving</option>
+ 														 <option value="2">Tracing Services</option>
+ 														 <option value="3">Document Collection and Filing</option>
+												</select>
+											</div>
+
+
+											<div class="col-md-12" data-aos="fade-up"
+												data-aos-delay="300">
+												<textarea class="form-control" name="q_addinfo"
+													placeholder="Additional Information" rows="6" required=""></textarea>
+											</div>
+											<center>
+											<div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+												<button type="submit" placeholder="submit" name="q_submit"
+													class="btn btn-primary">Submit</button>
+											</div></center>
 										</div>
 									</form>
 								</div>
@@ -275,7 +273,6 @@
 		} else {
 		}
 	</script>
-
 
 </body>
 
