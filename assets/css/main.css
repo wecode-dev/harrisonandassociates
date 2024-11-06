@@ -529,6 +529,8 @@ padding: 8px 25px;
   }
 }
 
+
+
 /*--------------------------------------------------------------
 # Global Footer
 --------------------------------------------------------------*/
@@ -557,7 +559,7 @@ padding: 8px 25px;
 
 .footer .footer-about .logo span {
   color: var(--heading-color);
-  font-size: 30px;
+  font-size: 22px;
   font-weight: 700;
   letter-spacing: 1px;
   font-family: var(--heading-font);
@@ -633,6 +635,9 @@ padding: 8px 25px;
 
 .footer .footer-contact p {
   margin-bottom: 5px;
+font-size: 16px;
+
+
 }
 
 .footer .copyright {
@@ -855,7 +860,7 @@ section,
 
 .hero h1 {
   margin: 0;
-  font-size: 56px;
+  font-size: 36px;
   font-weight: 700;
   line-height: 72px;
 }
@@ -1498,7 +1503,7 @@ padding: 0;
 .contact p {
   padding: 0;
   margin-bottom: 0;
-  font-size: 22px;
+  font-size: 20px;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
 }
 
@@ -1547,6 +1552,22 @@ padding: 0;
 
 .contact .php-email-form button[type=submit]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
+}
+
+
+/*--------------------------------------------------------------
+# My Code for Template Width
+--------------------------------------------------------------*/
+
+@media (min-width: 1200px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width:1240px;
+  }
+
+.img-fluid {
+  max-width: 100%;
+  height: 40%;
+  width: 100%;
 }
 
 /*--------------------------------------------------------------
