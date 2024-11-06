@@ -1,5 +1,3 @@
-<?php session_start(); ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -57,9 +55,9 @@
 
 			<nav id="navmenu" class="navmenu">
 				<ul>
-					<li><a href="index.html#home" class="active">Home<br></a></li>
+					<li><a href="index.html#home">Home<br></a></li>
 					<li><a href="index.html#about">About Us</a></li>
-					<li><a href="quote.html">Get a Quote</a></li>
+					<li><a href="quote.html" class="active">Get a Quote</a></li>
 					<li class="dropdown"><a href="index.html#services"><span>Services</span> <i
 							class="bi bi-chevron-down toggle-dropdown"></i></a>
 						<ul>
@@ -74,14 +72,27 @@
 
 	<main class="quote">
 
-		<!-- Service Details Section -->
+
+<!-- Quote Title Section -->
+		<section id="se1" class="se1 section">
+			<img src="assets/img/imgTitle.jpg" alt="" data-aos="fade-in" class="">
+			<!-- Page Title -->
+			<div class="container">
+				<div class="row justify-content-center" data-aos="zoom-out">
+					<center>
+						<h1>
+							<b>REQUEST A FREE QUOTE TODAY</b>
+						</h1>
+					</center>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- Quote Details Section -->
 		<section id="Quote" class="Quote section">
 			<div class="row justify-content-center" data-aos="zoom-in"
 				data-aos-delay="100">
-				<div class="col-xl-10">
-					<div class="text-center">
-						<h1><b>Request a Free Quote Today</b></h1>
-					</div></div>
 				
 				<div class="container section-title"  data-aos="zoom-in"
 				data-aos-delay="100">
@@ -89,7 +100,7 @@
 						handling? Fill out the form below, and a member of our team will
 						provide you with a tailored quote based on your specific needs. We
 						offer competitive rates for all services, and we are happy to
-						provide upfront pricing with no hidden fees.</p>
+						provide upfront pricing with no hidden fees.</p><br>
 				
 					<div class="container">
 						<div class="content">
@@ -124,10 +135,10 @@
 												data-aos-delay="300">
 												<p>Service Required: </p>
 											</div>
-											<div class="col-md-6" data-aos="fade-up"
+											<div class="col-md-5" data-aos="fade-up"
 												data-aos-delay="300">
-												<select	class="form-control" id="q_servicerequired" name="q_servicerequired">
-														<option selected>Select Service Required</option>
+												<select	class="form-control" id="q_servicerequired" name="q_servicerequired" aria-label="Default">
+												<option selected>Select Service Required</i></option>
  														 <option value="1">Process Serving</option>
  														 <option value="2">Tracing Services</option>
  														 <option value="3">Document Collection and Filing</option>
@@ -141,7 +152,7 @@
 													placeholder="Additional Information" rows="6" required=""></textarea>
 											</div>
 											<center>
-											<div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+											<div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
 												<button type="submit" placeholder="submit" name="q_submit"
 													class="btn btn-primary">Submit</button>
 											</div></center>
@@ -149,7 +160,7 @@
 									</form>
 								</div>
 							</div>
-						</div>
+						</div><br>
 						<p>Once submitted, one of our consultants will be in touch
 							within 24 hours to discuss your requirements in detail.</p>
 						<p>Why Choose Us? • Affordable Pricing • Tailored Services •
@@ -255,24 +266,6 @@
 
 	<!-- Main JS File -->
 	<script src="assets/js/main.js"></script>
-	<script src="https://code.jquery.com/jquery-3.7.1.mini.js"></script>
-	<script
-		src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
-	<script>
-		var messageText = "<?= $_SESSION['status'] ?? ''; ?>";
-		if (messageText != '') {
-			Swal.fire({
-				title : "Thank you!",
-				text : messageText,
-				icon : "success"
-			});
-			<?php unset($_SESSION['status']); ?>
-		} else {
-		}
-	</script>
 
 </body>
 
