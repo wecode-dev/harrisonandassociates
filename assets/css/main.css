@@ -559,7 +559,7 @@ padding: 8px 25px;
 
 .footer .footer-about .logo span {
   color: var(--heading-color);
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 700;
   letter-spacing: 1px;
   font-family: var(--heading-font);
@@ -658,6 +658,11 @@ font-size: 16px;
 
 .footer .credits a {
   color: color-mix(in srgb, var(--contrast-color), transparent 30%);
+}
+
+.footer .credits p {
+  color: color-mix(in srgb, var(--contrast-color), transparent 30%);
+font-size: 15px;
 }
 
 /*--------------------------------------------------------------
@@ -1509,6 +1514,13 @@ padding: 0;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
 }
 
+.contact p1 {
+  padding: 0;
+  margin-bottom: 0;
+  font-size: 17px;
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+}
+
 .contact .info-item p {
   padding: 0;
   margin-bottom: 0;
@@ -1753,12 +1765,12 @@ padding: 0;
 --------------------------------------------------------------*/
 .se1 {
   width: 100%;
-  min-height: calc(100vh - 1000px);
+  min-height: calc(100vh - 100px);
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 5px 0 5px 0;
+  padding: 0px 0 0px 0;
   overflow: hidden;
 }
 
@@ -1780,8 +1792,9 @@ padding: 0;
   z-index: 1;
 }
 
-.se1 .container {
+.se1 .container-fluid1 {
   position: relative;
+text-align: center;
   z-index: 3;
 }
 
@@ -1790,7 +1803,15 @@ padding: 0;
   font-size: 22px;
   font-weight: 700;
   line-height: 60px;
+color: color-mix(in srgb, var(--default-color), transparent 30%);
 }
+
+.sw1 h1 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 60px;
+color: color-mix(in srgb, var(--default-color), transparent 30%);
 
 }
 
