@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title>The Harrison & Associates Ltd - Quote</title>
+<title>The Harrison & Associates Ltd</title>
 <meta name="description" content="">
 <meta name="keywords" content="">
 
@@ -40,13 +40,14 @@
   ======================================================== -->
 </head>
 
-<body class="quote">
+<body class="index-page">
 
 	<header id="header" class="header d-flex align-items-center sticky-top">
 		<div
 			class="container-fluid container-xl position-relative d-flex align-items-center">
 
 			<a href="index.html" class="logo d-flex align-items-center me-auto">
+				<!-- Uncomment the line below if you also wish to use an image logo -->
 				<img src="assets/img/Harrison.jpg" alt="">
 				<h1 class="sitename">
 					<b>The Harrison & Associates Ltd</b>
@@ -55,9 +56,9 @@
 
 			<nav id="navmenu" class="navmenu">
 				<ul>
-					<li><a href="index.html#home">Home<br></a></li>
-					<li><a href="index.html#about">About Us</a></li>
-					<li><a href="quote.html" class="active">Get a Quote</a></li>
+					<li><a href="index.html" class="active">Home<br></a></li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="quote.html">Get a Quote</a></li>
 					<li class="dropdown"><a href="index.html#services"><span>Services</span> <i
 							class="bi bi-chevron-down toggle-dropdown"></i></a>
 						<ul>
@@ -67,24 +68,26 @@
 				<i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
 			</nav>
 			<a class="btn-getstarted" href="contact.html">Contact Us</a>
+
 		</div>
 	</header>
 
-	<main class="quote">
+	<main class="main">
 
+		<!-- Hero Section -->
+		<section id="quote" class="quote section">
 
-<!-- Quote Title Section -->
+			<img src="assets/img/img2.jpg" alt="" data-aos="fade-in" class="">
+
+			<div class="container">
+				<div class="row justify-content-center" data-aos="zoom-out">
+					<div class="col-xl-7 col-lg-9 text-center">
+						<h1><b>REQUEST A FREE QUOTE TODAY</b></h1>
+					</div>
+				</div>
+
 					
-			<!-- Page Title -->
-<div style="position: relative; display: flex; justify-content: center; align-items: center; width: 100%; height: 20%; background: color-mix(in srgb, var(--background-color), transparent 30%);" data-aos="zoom-out" data-aos-delay="100">
-  <img src="assets/img/imgTitle.jpg" alt="Sample Image" style="width: 100%; height: 20%;">
-  <div style="position: absolute; font-size: 28px; font-weight: bold; text-align: center; color: color-mix(in srgb, var(--default-color), transparent 30%);">
-    <h2><b>REQUEST A FREE QUOTE TODAY</b><h2>
-  </div>
-</div>
- 
-		<!-- Quote Details Section -->
-		<section id="Quote" class="Quote section">
+<!-- Section Title -->
 			<div class="row justify-content-center" data-aos="zoom-in"
 				data-aos-delay="100">
 				
@@ -99,9 +102,9 @@
 					<div class="container">
 						<div class="content">
 							<div class="row">
-								<div class="col-sm-4 p-3">
+								<div class="col-sm-4 p-3 section-title">
 									<img src="assets/img/quote.jpg" alt="" data-aos="fade-in"
-										class="" width="100%" height="100%">
+										class="" width="20%" height="20%">
 								</div>
 								<div class="col-sm-8 p-3">
 									<form action="quotesubmit.php" method="post" data-aos="fade-up"
@@ -162,19 +165,26 @@
 					</div>
 				</div>
 			</div>
+</div>
+
 		</section>
-		<!-- /Service Details Section -->
+		<!-- /Hero Section -->
+
+		<section id="about" class="about section">
+
+			
+		</section>
+		<!-- /About Section -->
+
+	
 
 	</main>
 
-
-
-	
 	<footer id="footer" class="footer light-background">
 
 		<div class="container footer-top">
 			<div class="row gy-4">
-				<div class="col-lg-5 col-xs-5 col-sm-5 col-md-5 col-lg-5 col-xl-5 col-xxl-5 footer-about">
+				<div class="col-lg-5 col-md-12 footer-about">
 					<a href="index.html" class="logo d-flex align-items-center"> <img
 						src="assets/img/Harrison.jpg" alt="" height="25%" width="25%">
 
@@ -190,18 +200,18 @@
 					</div>
 				</div>
 
-				<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2 footer-links">
+				<div class="col-lg-2 col-6 footer-links">
 					<h4>Useful Links</h4>
 					<ul>
 						<li><a href="#">Home</a></li>
 						<li><a href="#about">About</a></li>
 						<li><a href="#services">Services</a></li>
-						<li><a href="contact.html">Contact</a></li>
+						<li><a href="#contact">Contact</a></li>
 						<li>
 					</ul>
 				</div>
 
-				<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2 footer-links">
+				<div class="col-lg-2 col-6 footer-links">
 					<h4>Our Services</h4>
 					<ul>
 						<li><a href="service-details.html">Process Serving</a></li>
@@ -209,7 +219,7 @@
 				</div>
 
 				<div
-					class="col-md-3 col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3 footer-contact text-md-start">
+					class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
 					<h4>Contact Us</h4>
 					<p>[Insert Full Address Here]</p>
 					<p>London</p>
@@ -229,13 +239,10 @@
 			<p>
 				© <span><font size="1">Copyright - All Rights Reserved</font></span>
 			</p>
-			
-			<div class="credits">
 			<p>
 				<strong class="px-1 sitename">The Harrison and Associates
 					Ltd</strong>
-			</p></div>
-
+			</p>
 
 			<div class="credits">
 				<font size="1">Designed by <a
@@ -269,4 +276,3 @@
 </body>
 
 </html>
-
