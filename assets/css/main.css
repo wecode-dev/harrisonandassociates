@@ -627,7 +627,7 @@ rotate(
 .footer .copyright {
 	padding-top: 20px;
 	padding-bottom: 25px;
-	background-color: var(--accent-color);
+	background-color: #2f3a53;
 	color: var(--contrast-color);
 }
 
